@@ -1,6 +1,3 @@
-# Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
-# SPDX-License-Identifier: MIT-0
-
 version = 0.1
 [default]
 [default.build]
@@ -9,11 +6,15 @@ cached=true
 parallel=true
 use_container=true
 
-[default.local_start_api]
-[default.local_start_api.parameters]
-warm_containers="EAGER"
-env_vars="locals.json"
-
 [default.local_invoke]
 [default.local_invoke.parameters]
 env_vars="locals.json"
+
+[default.local_start_lambda]
+[default.local_start_lambda.parameters]
+env_vars="locals.json"
+
+[default.local_start_api]
+[default.local_start_api.parameters]
+env_vars="locals.json"
+warm_containers="EAGER"
