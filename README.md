@@ -1,17 +1,12 @@
-## My Project
+# SAM config starter
 
-TODO: Fill this README out!
+This repository creates a simple samconfig file in an existing SAM project. The samconfig file is configured with opinionated defaults for build and local development. For the full explanation read [this blog](https://aws.amazon.com/blogs/compute/optimizing-serverless-development-with-samconfig/)
 
-Be sure to:
+## Installing with SAM
 
-* Change the title in this README
-* Edit your repository description on GitHub
-
-## Security
-
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
-
-## License
-
-This library is licensed under the MIT-0 License. See the LICENSE file.
-
+* With (AWS SAM)[https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html] installed, in an *exisitiing* project run
+  ```bash
+  sam init
+  ```
+* Choose *option 2* for a custom template.
+* Use this repository
